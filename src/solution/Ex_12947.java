@@ -6,11 +6,13 @@ package solution;
  */
 
 public class Ex_12947 {
-    private int sum = 0;
     public boolean solution(int x) {
-        String.valueOf(x).chars().forEach(c ->
-                sum += c - '0'
-        );
+        int sum = (x / 10000) +
+                (x % 10000) / 1000 +
+                (x % 1000) / 100 +
+                (x % 100) / 10 +
+                (x % 10);
+
         return x % sum == 0;
     }
 }
