@@ -7,22 +7,14 @@ package solution;
 
 public class Ex_12930 {
     public String solution(String s) {
-        String[] array = s.split(" ", -1);
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < array.length; i++) {
-            builder.append(convertWord(array[i]));
-            if (i < array.length - 1) builder.append(" ");
-        }
-        return builder.toString();
-    }
+        StringBuilder answer = new StringBuilder();
+        String[] array = s.split("");
+        int count = -1;
 
-    private String convertWord(String str) {
-        String[] array = str.split("", -1);
-        System.out.println(array.length);
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < array.length; i++) {
-            builder.append((i % 2 == 0) ? array[i].toUpperCase() : array[i].toLowerCase());
+        for (String str : array) {
+            count = str.equals(" ") ? -1 : count + 1;
+            answer.append((count % 2 == 0) ? str.toUpperCase() : str.toLowerCase());
         }
-        return builder.toString();
+        return answer.toString();
     }
 }
