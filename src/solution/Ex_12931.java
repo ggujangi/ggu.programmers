@@ -8,12 +8,10 @@ package solution;
 public class Ex_12931 {
     public int solution(int n) {
         int answer = 0;
-        while (true) {
-            answer = n % 10 + answer;
-            if (n < 10) {
-                break;
-            }
-            n = n / 10;
+        String[] array = String.valueOf(n).split("");
+
+        for (String s : array) {
+            answer += Integer.parseInt(s);
         }
         return answer;
     }
