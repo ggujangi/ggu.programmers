@@ -9,11 +9,15 @@ import java.util.Arrays;
 
 public class Ex_12915 {
     public String[] solution(String[] strings, int n) {
-        Arrays.sort(strings, (o1, o2) -> {
-            if (o1.charAt(n) > o2.charAt(n)) return 1;
-            else if (o1.charAt(n) < o2.charAt(n)) return -1;
-            return o1.compareTo(o2);
-        });
+        for (int i = 0; i < strings.length; i++) {
+            strings[i] = strings[i].charAt(n) + strings[i];
+        }
+
+        Arrays.sort(strings);
+
+        for (int i = 0; i < strings.length; i++) {
+            strings[i] = strings[i].substring(1);
+        }
 
         return strings;
     }
