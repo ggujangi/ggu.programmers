@@ -1,5 +1,6 @@
 package solution;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -18,6 +19,15 @@ public class Ex_68644 {
             }
         }
 
-       return set.stream().sorted().mapToInt(Integer::intValue).toArray();
+        int[] answer = new int[set.size()];
+        int i = 0;
+        for (Integer integer : set) {
+            answer[i] = integer;
+            i++;
+        }
+
+        Arrays.sort(answer);
+
+        return answer;
     }
 }
