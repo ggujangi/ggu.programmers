@@ -1,31 +1,30 @@
 package solution;
 
-import java.util.Arrays;
-import java.util.Stack;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * #12906
  * url : https://programmers.co.kr/learn/courses/30/lessons/12906
  *
  * 같은 숫자는 싫어
- * 효율성 테스트 : 57ms
+ * 효율성 테스트 : 27ms
  */
 
 public class Ex_12906 {
     public int[] solution(int[] arr) {
-        Stack<Integer> stack = new Stack<>();
-        for (int i : arr) {
-            if (stack.isEmpty()) {
-                stack.push(i);
-            } else if (stack.peek() != i) {
-                stack.push(i);
-            }
+        List<Integer> arrayList = new ArrayList<>();
+
+        int lastNum = -1;
+
+        for(int i : arr){
+            if(lastNum != i) arrayList.add(i);
+            lastNum = i;
         }
 
-        int[] answer = new int[stack.size()];
-
-        for (int i = stack.size() - 1; i >= 0; i--) {
-            answer[i] = stack.pop();
+        int[] answer = new int[arrayList.size()];
+        for (int i = 0; i < arrayList.size(); i++) {
+            answer[i] = arrayList.get(i);
         }
 
         return answer;
