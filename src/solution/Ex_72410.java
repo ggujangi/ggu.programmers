@@ -4,7 +4,7 @@ package solution;
  * #72410
  * url : https://programmers.co.kr/learn/courses/30/lessons/72410
  *
- * 가운데 글자 가져오기
+ * 신규 아이디 추천
  */
 
 public class Ex_72410 {

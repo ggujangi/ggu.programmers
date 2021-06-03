@@ -2,6 +2,8 @@ package solution;
 
 /**
  * #67256
+ * url : https://programmers.co.kr/learn/courses/30/lessons/67256
+ *
  * 키패드 누르기
  */
 

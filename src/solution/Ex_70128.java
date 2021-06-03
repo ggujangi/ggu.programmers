@@ -2,6 +2,8 @@ package solution;
 
 /**
  * #70128
+ * url : https://programmers.co.kr/learn/courses/30/lessons/70128
+ *
  * 내적
  */
 

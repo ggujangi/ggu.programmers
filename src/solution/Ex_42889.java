@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 /**
  * #42889
+ * url : https://programmers.co.kr/learn/courses/30/lessons/42889
+ *
  * 실패율
  */
 

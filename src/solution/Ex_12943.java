@@ -2,6 +2,8 @@ package solution;
 
 /**
  * #12943
+ * url : https://programmers.co.kr/learn/courses/30/lessons/12943
+ *
  * 콜라츠 추측
  */
 

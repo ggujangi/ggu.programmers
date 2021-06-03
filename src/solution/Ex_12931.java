@@ -2,6 +2,8 @@ package solution;
 
 /**
  * #12931
+ * url : https://programmers.co.kr/learn/courses/30/lessons/12931
+ *
  * 자릿수 더하기
  */
 

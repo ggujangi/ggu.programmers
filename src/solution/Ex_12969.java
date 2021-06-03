@@ -5,6 +5,8 @@ import java.util.StringTokenizer;
 
 /**
  * #12969
+ * url : https://programmers.co.kr/learn/courses/30/lessons/12969
+ *
  * 직사각형 별찍기
  */
 

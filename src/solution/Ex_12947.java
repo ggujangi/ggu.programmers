@@ -2,6 +2,8 @@ package solution;
 
 /**
  * #12947
+ * url : https://programmers.co.kr/learn/courses/30/lessons/12947
+ *
  * 하샤드 수
  */
 
