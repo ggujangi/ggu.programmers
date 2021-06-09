@@ -5,7 +5,7 @@ package solution.level_2;
  * url : https://programmers.co.kr/learn/courses/30/lessons/12924
  *
  * 숫자의 표현
- * 효율성 테스트 : 불합격
+ * 효율성 테스트 : 1.75ms
  */
 
 public class Ex_12924 {
@@ -18,6 +18,7 @@ public class Ex_12924 {
             for (int i = index; i <= n; i++) {
                 sum += i;
                 if (sum == n) answer++;
+                else if (sum > n) break;
             }
             sum = 0;
             index++;
